@@ -26,7 +26,7 @@ Test that the project is running by going to <http://localhost:8000>
 
 ## Exercise 1.12 -> accepting connections
 
-If your frontend is not running in the same origin, run the server with `FRONT_URL=<front-url> npm start` to allow cross-origin requests.
+If your frontend is not running in the same origin, run the server with `FRONT_URL=<front-url> npm start` (without < >) to allow cross-origin requests.
 
 # Using redis - Part 2 onwards
 
