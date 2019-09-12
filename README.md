@@ -28,6 +28,15 @@ Test that the project is running by going to <http://localhost:8000>
 
 If your frontend is not running in the same origin, run the server with `FRONT_URL=<front-url> npm start` (without < >) to allow cross-origin requests.
 
+### Dockerized solution
+
+Build docker image and start backend with following commands:
+
+```bash
+docker build -t backend_example .
+docker run --name backend_test -p 8000:8000 backend_example
+```
+
 # Using redis - Part 2 onwards
 
 Use redis by running the server with environment variable `REDIS=<hostname>`. For example `REDIS=localhost`. You can also define port with `REDIS_PORT=<port-number>`, defaults to 6379.
