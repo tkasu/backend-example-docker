@@ -34,7 +34,7 @@ Build docker image and start backend with following commands:
 
 ```bash
 docker build -t backend_example .
-docker run --name backend_test -p 8000:8000 backend_example
+docker run --name backend_test -p 8000:8000 -v $(pwd)/logs.txt:/app/logs.txt backend_example
 ```
 
 # Using redis - Part 2 onwards
